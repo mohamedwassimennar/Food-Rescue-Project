@@ -1,0 +1,32 @@
+<!-- <a href="{{ route('mitra.edit', $mitra->id) }}" -->
+<a href="#" class="btn btn-warning btn-sm">Edit</a>
+<!-- <form action="{{ route('mitra.destroy', $mitra->id) }}" method="POST" -->
+
+<form action="{{ route('data_customer.update', $user->id) }}" method="POST">
+    @csrf @method('PUT')
+    <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            value="{{ $user->name }}"
+            required
+        />
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            value="{{ $user->email }}"
+            required
+        />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update User</button>
+</form>
