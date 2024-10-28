@@ -20,7 +20,13 @@ RescueFood is a web application designed to facilitate the recovery and redistri
 
 ## Installation
 
-1. **Navigate to the Project Directory and Install Dependencies:**
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/mohamedwassimennar/Food-Rescue-Project.git
+    ```
+
+2. **Navigate to the Project Directory and Install Dependencies:**
 
     ```bash
     cd Food-Rescue-Project
@@ -28,7 +34,7 @@ RescueFood is a web application designed to facilitate the recovery and redistri
     npm install
     ```
 
-2. **Setup Environment Variables:**
+3. **Setup Environment Variables:**
 
     Create a `.env` file by copying the example provided:
 
@@ -36,19 +42,19 @@ RescueFood is a web application designed to facilitate the recovery and redistri
     cp .env.example .env
     ```
 
-3. **Generate Application Key:**
+4. **Generate Application Key:**
 
     ```bash
     php artisan key:generate
     ```
 
-4. **Run Database Migrations:**
+5. **Run Database Migrations:**
 
     ```bash
     php artisan migrate
     ```
 
-5. **Start the Development Server:**
+6. **Start the Development Server:**
 
     ```bash
     php artisan serve
