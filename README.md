@@ -20,9 +20,56 @@ RescueFood is a web application designed to facilitate the recovery and redistri
 
 ## Installation
 
-**Navigate to the Project Directory and Install Dependencies:**
+1. **Navigate to the Project Directory and Install Dependencies:**
 
-```bash
-cd Food-Rescue-Project
-composer install
-npm install
+    ```bash
+    cd Food-Rescue-Project
+    composer install
+    npm install
+    ```
+
+2. **Setup Environment Variables:**
+
+    Create a `.env` file by copying the example provided:
+
+    ```bash
+    cp .env.example .env
+    ```
+
+3. **Generate Application Key:**
+
+    ```bash
+    php artisan key:generate
+    ```
+
+4. **Run Database Migrations:**
+
+    ```bash
+    php artisan migrate
+    ```
+
+5. **Start the Development Server:**
+
+    ```bash
+    php artisan serve
+    ```
+
+## Contributors
+
+The following individuals contributed to the development of RescueFood:
+
+- Mohamed Wassim Ennar
+- Nidhal Ennar
+- Said Atoui
+- Ahmed Gamgami
+- Chaima Idoudi
+
+## Project Features
+
+- **Food Recovery Management:** Schedule and manage food recovery events.
+- **Organization Coordination:** Facilitate communication and coordination between food providers and charities.
+- **Data Security:** Protect sensitive data related to donations and user information.
+
+## Contact
+
+For further details or contributions, please feel free to contact the contributors through the GitHub repository.
